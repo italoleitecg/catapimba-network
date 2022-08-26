@@ -11,10 +11,11 @@ module "vpc" {
   enable_nat_gateway     = true
   single_nat_gateway     = false
   one_nat_gateway_per_az = true
-
+ 
   tags = {
     Terraform   = "true"
-    Environment = "prod"
-    Name = "catapimba-corps-vpc"
+    Environment = "dev"
+    Name        = "catapimba-corps-vpc"
+    CC		= "10502"
   }
 }
